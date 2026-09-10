@@ -10,6 +10,18 @@ An enterprise-grade, autonomous interview preparation system that ingests any jo
 
 ---
 
+## 📸 Visual Preview
+
+| 1. Kit Overview & Question Bank | 2. 3D Flashcards & Leitner Spaced Repetition |
+| :---: | :---: |
+| ![Kit Overview & Question Bank](docs/screenshots/01-kit-overview-and-question-bank.png) | ![Interactive Flashcards Practice](docs/screenshots/02-interactive-flashcards-practice.png) |
+
+| 3. Headless Batch CLI Evaluation | 4. Deterministic Bipartite Coverage Matrix |
+| :---: | :---: |
+| ![Headless CLI Evaluation](docs/screenshots/03-headless-cli-batch-evaluation.png) | ![Deterministic Coverage Verification](docs/screenshots/04-deterministic-coverage-matrix.png) |
+
+---
+
 ## 🌟 Key Features
 
 1. **🛡️ SSRF-Protected Web Crawler (`Service 2`):**
