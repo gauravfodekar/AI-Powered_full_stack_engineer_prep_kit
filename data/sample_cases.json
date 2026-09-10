@@ -1,0 +1,27 @@
+[
+  {
+    "id": "case-01",
+    "jd": "Senior Backend Engineer\nWe are looking for a Senior Backend Engineer with 5+ years of Node.js and TypeScript experience.\nMust have experience designing distributed systems. Mentorship of junior engineers is a plus.",
+    "company_url": "https://example.com",
+    "days": 5
+  },
+  {
+    "id": "case-02",
+    "jd": "Full Stack Engineer\nRequirements:\n- 4+ years React, Next.js, and Tailwind CSS\n- Strong experience with REST APIs and MongoDB\n- Proven ability to write end-to-end automated tests",
+    "company_url": "https://example.com",
+    "days": 7
+  },
+  {
+    "id": "case-03",
+    "jd": "Urgent hire: DevOps & Cloud Architect\nMust have deep knowledge of Kubernetes, AWS infrastructure, and CI/CD pipelines.",
+    "company_url": "https://example.com",
+    "days": 1
+  },
+  {
+    "id": "case-04",
+    "jd": "Junior Developer needed.\nBasic knowledge of JavaScript and Git.",
+    "company_url": "https://example.com",
+    "days": 3
+  }
+]
+

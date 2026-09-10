@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased min-h-screen selection:bg-sky-500 selection:text-white;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* 3D Flip Card Effect for Flashcards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Print Styles for Printable Cheat Sheet */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+

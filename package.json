@@ -1,0 +1,37 @@
+{
+  "name": "ai-interview-prep-kit",
+  "version": "1.0.0",
+  "description": "AI-powered Full-Stack Interview Preparation Kit Generator",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "evaluate": "node src/cli/evaluate.js",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "@google/genai": "^0.2.0",
+    "axios": "^1.7.9",
+    "bcryptjs": "^3.0.3",
+    "cheerio": "^1.0.0",
+    "commander": "^13.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ipaddr.js": "^2.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.5",
+    "p-queue": "^8.1.0",
+    "zod": "^3.24.2"
+  },
+  "keywords": [
+    "interview-prep",
+    "ai",
+    "gemini",
+    "full-stack",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC"
+}

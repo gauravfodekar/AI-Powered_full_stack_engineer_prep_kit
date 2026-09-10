@@ -1,0 +1,253 @@
+{
+  "_id": "6aa1a744e51637f2803a85d2",
+  "id": "6aa1a744e51637f2803a85d2",
+  "title": "Senior Backend Engineer",
+  "source": {
+    "company": "Stripe",
+    "company_url": "https://stripe.com",
+    "role": "Senior Backend Engineer (Node.js & Distributed Systems)",
+    "location": "Remote / Flexible",
+    "jd_chars": 641,
+    "researched_at": "2026-09-09T18:36:52.802Z",
+    "pages_used": [
+      "https://stripe.com",
+      "https://stripe.com/in/careers",
+      "https://stripe.com/in/industries/fintech",
+      "https://stripe.com/in/about"
+    ]
+  },
+  "company_brief": {
+    "summary": "Stripe is a technology company focused on improving global economic growth and prosperity by building programmable financial infrastructure. Known for its high engineering bar, focus on craftsmanship, and extreme reliability at scale, Stripe powers financial infrastructure for millions of businesses worldwide.",
+    "what_they_do": "Stripe provides a comprehensive set of payments and financial tools—including payment processing, billing, terminal, connect, radar, and issuing—allowing businesses of all sizes to accept payments, offer financial services, and implement custom revenue models globally.",
+    "sources": [
+      "https://stripe.com",
+      "https://stripe.com/in/careers",
+      "https://stripe.com/in/industries/fintech",
+      "https://stripe.com/in/about"
+    ]
+  },
+  "role": {
+    "title": "Senior Backend Engineer (Node.js & Distributed Systems)",
+    "seniority": "Senior",
+    "responsibilities": [
+      "Build resilient distributed payment and telemetry microservices",
+      "Conduct code reviews, mentor junior engineers, and drive system architecture RFCs"
+    ],
+    "requirements": [
+      {
+        "id": "r1",
+        "text": "5+ years building backend services in Node.js / TypeScript / Go.",
+        "kind": "technical",
+        "priority": "must"
+      },
+      {
+        "id": "r2",
+        "text": "Strong proficiency in PostgreSQL, MongoDB, Redis caching, and Kafka message streaming.",
+        "kind": "technical",
+        "priority": "must"
+      },
+      {
+        "id": "r3",
+        "text": "Deep understanding of distributed transactions, idempotency keys, rate limiting algorithms (Token Bucket/Leaky Bucket), and gRPC.",
+        "kind": "technical",
+        "priority": "must"
+      },
+      {
+        "id": "r4",
+        "text": "Hands-on experience with Docker, Kubernetes, and AWS infrastructure.",
+        "kind": "technical",
+        "priority": "must"
+      },
+      {
+        "id": "r5",
+        "text": "Experience conducting code reviews, mentoring junior engineers, and driving system architecture RFCs.",
+        "kind": "behavioural",
+        "priority": "must"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "custom-q-1788981287255",
+      "requirement_ids": [
+        "r1"
+      ],
+      "category": "system-design",
+      "prompt": "What does redis cache do ?",
+      "answer_outline": "It helps to maintain large data in memory and return it from redis memory if available and does not hit database",
+      "difficulty": 2,
+      "is_custom": true
+    },
+    {
+      "id": "q1",
+      "requirement_ids": [
+        "r1"
+      ],
+      "category": "technical",
+      "prompt": "With over 5 years of backend experience using Node.js, TypeScript, and Go, how do you approach concurrency models and error handling differently when building high-throughput financial microservices in Node.js/TypeScript versus Go?",
+      "answer_outline": "Candidates should discuss the event loop, asynchronous I/O, and manual Promise handling in Node.js/TypeScript compared to goroutines, channels, and structured concurrency patterns in Go. They should address CPU-bound vs. I/O-bound performance trade-offs, typing strictness, and how error propagation differs across both runtimes.",
+      "difficulty": 3
+    },
+    {
+      "id": "q2",
+      "requirement_ids": [
+        "r2"
+      ],
+      "category": "technical",
+      "prompt": "Design a high-volume payment ledger architecture using PostgreSQL for ACID guarantees, MongoDB for flexible metadata, Redis for distributed caching/rate-limiting, and Apache Kafka for asynchronous event streaming. How do you maintain consistency between Kafka event production and PostgreSQL state mutations?",
+      "answer_outline": "Candidates should discuss the Outbox pattern or Change Data Capture (CDC) like Debezium to solve dual-write problems. They should explain PostgreSQL isolation levels, MongoDB document modeling trade-offs for dynamic payloads, Redis caching eviction strategies for hot keys, and Kafka partitioning strategies to ensure ordered event processing per merchant or account.",
+      "difficulty": 3
+    },
+    {
+      "id": "q3",
+      "requirement_ids": [
+        "r3"
+      ],
+      "category": "technical",
+      "prompt": "In a distributed payment processing pipeline, how do you implement robust idempotency keys to prevent double-charging during network partitions, and how do you design a Token Bucket rate-limiting algorithm using Redis to protect downstream banking partners?",
+      "answer_outline": "Candidates should explain atomic operations in Redis (using Lua scripts or Redis transactions) for idempotency checks, database unique constraints as a safety net, and state lifecycle tracking (e.g., Processing, Success, Failed). For rate limiting, they should detail how Token Bucket works with timestamp tracking, bucket capacity, and refill rates implemented via Redis hashes or sorted sets.",
+      "difficulty": 3
+    },
+    {
+      "id": "q4",
+      "requirement_ids": [
+        "r4"
+      ],
+      "category": "technical",
+      "prompt": "How do you manage zero-downtime deployments and secure configuration management for mission-critical microservices running on Kubernetes across AWS infrastructure, utilizing Docker containers?",
+      "answer_outline": "Candidates should cover Kubernetes readiness and liveness probes, rolling update strategies with maxSurge and maxUnavailable, horizontal pod autoscaling (HPA) based on custom metrics, IAM roles for service accounts (IRSA), secure secret management using AWS Secrets Manager integrated with Kubernetes, and multi-AZ resilience patterns.",
+      "difficulty": 3
+    },
+    {
+      "id": "q1",
+      "requirement_ids": [
+        "r5"
+      ],
+      "category": "behavioural",
+      "prompt": "Describe a time when you had to drive a significant architectural RFC through your engineering organization. How did you handle pushback from stakeholders, and how did you balance building consensus with maintaining engineering velocity and high standards?",
+      "answer_outline": "Expect candidates to discuss a structured RFC template (problem, proposed solution, trade-offs, security/scalability implications), strategies for early feedback alignment, managing technical disagreements constructively, and the eventual rollout and adoption of the architecture.",
+      "difficulty": 3
+    },
+    {
+      "id": "q7",
+      "requirement_ids": [
+        "r5"
+      ],
+      "category": "behavioural",
+      "prompt": "Describe a time when you drove a system architecture RFC (Request for Comments) that faced significant technical pushback or trade-off disagreements. How did you build consensus, mentor junior engineers through the design process, and ensure the final code review bar remained high?",
+      "answer_outline": "The candidate should discuss: 1) Structuring a clear RFC with explicit trade-offs, metrics, and failure modes; 2) Using the RFC process as a mentorship opportunity to guide junior engineers on architectural patterns; 3) Strategies for handling technical disagreements constructively while maintaining alignment on system reliability and craftsmanship; 4) Enforcing high standards during code reviews subsequent to the RFC approval.",
+      "difficulty": 3
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "f1",
+      "front": "How do Token Bucket and Leaky Bucket rate limiting algorithms differ?",
+      "back": "• Token Bucket allows bursts of traffic up to capacity; refills at a constant rate.\n• Leaky Bucket smooths out traffic into a constant, steady processing rate.\n• Token Bucket drops tokens on overflow, while Leaky Bucket drops incoming requests when the queue is full.",
+      "requirement_ids": [
+        "r3"
+      ]
+    },
+    {
+      "id": "f2",
+      "front": "Why are idempotency keys critical in distributed payment or event-driven systems?",
+      "back": "• Prevents duplicate processing during retries caused by network timeouts.\n• Ensures safe at-least-once message delivery semantics.\n• Typically stored in a fast lookup store (like Redis or PostgreSQL with unique constraints) with a TTL.",
+      "requirement_ids": [
+        "r2",
+        "r3"
+      ]
+    },
+    {
+      "id": "f3",
+      "front": "What are the core trade-offs of using gRPC over REST/JSON in microservices?",
+      "back": "• Uses HTTP/2 for multiplexing, streaming, and lower header overhead.\n• Leverages Protocol Buffers for strict typing and compact binary serialization.\n• Harder to debug directly via standard browsers or curl compared to human-readable JSON.",
+      "requirement_ids": [
+        "r3"
+      ]
+    },
+    {
+      "id": "f4",
+      "front": "How do you handle distributed transactions across independent microservices without Two-Phase Commit (2PC)?",
+      "back": "• Implement the Saga pattern using either choreography (event-driven) or orchestration.\n• Use compensating transactions to undo steps if a downstream failure occurs.\n• Rely on the Outbox pattern for reliable event publishing alongside local database commits.",
+      "requirement_ids": [
+        "r2",
+        "r3"
+      ]
+    },
+    {
+      "id": "f5",
+      "front": "What key architectural practices should be driven through technical RFCs?",
+      "back": "• Documenting context, constraints, and proposed alternatives with pros/cons.\n• Aligning cross-functional teams on scalability, security, and operational impacts.\n• Establishing clear failure modes, disaster recovery strategies, and monitoring metrics.",
+      "requirement_ids": [
+        "r5"
+      ]
+    }
+  ],
+  "schedule": {
+    "days_available": 7,
+    "days": [
+      {
+        "day": 1,
+        "focus": "Core Technical Concepts & Problem Solving",
+        "question_ids": [
+          "q1"
+        ],
+        "minutes": 40,
+        "is_completed": false
+      },
+      {
+        "day": 2,
+        "focus": "Core Technical Concepts & Problem Solving",
+        "question_ids": [
+          "q2"
+        ],
+        "minutes": 40
+      },
+      {
+        "day": 3,
+        "focus": "Core Technical Concepts & Problem Solving",
+        "question_ids": [
+          "q3"
+        ],
+        "minutes": 40
+      },
+      {
+        "day": 4,
+        "focus": "Core Technical Concepts & Problem Solving",
+        "question_ids": [
+          "q4"
+        ],
+        "minutes": 40
+      },
+      {
+        "day": 5,
+        "focus": "Leadership, Mentorship & Behavioural",
+        "question_ids": [
+          "q1"
+        ],
+        "minutes": 40
+      },
+      {
+        "day": 6,
+        "focus": "Leadership, Mentorship & Behavioural",
+        "question_ids": [
+          "q7"
+        ],
+        "minutes": 40
+      },
+      {
+        "day": 7,
+        "focus": "System Architecture & Scalability",
+        "question_ids": [
+          "custom-q-1788981287255"
+        ],
+        "minutes": 25
+      }
+    ]
+  },
+  "coverage": {
+    "uncovered_requirement_ids": [],
+    "passes": 1
+  },
+  "updatedAt": "2026-09-09T19:21:15.173Z"
+}

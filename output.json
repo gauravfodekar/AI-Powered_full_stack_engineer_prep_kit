@@ -1,0 +1,110 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-10T12:18:34.226Z",
+  "kits": [
+    {
+      "id": "6aa1a744e51637f2803a85d2",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Provides",
+          "company_url": "https://example.com",
+          "role": "Software Engineer",
+          "location": "Remote / Flexible",
+          "jd_chars": 54,
+          "researched_at": "2026-09-10T12:18:34.223Z",
+          "pages_used": [
+            "https://example.com"
+          ]
+        },
+        "company_brief": {
+          "summary": "Example Domain is a placeholder organization used for documentation and demonstration purposes.",
+          "what_they_do": "Provides domains for use in documentation examples without needing permission.",
+          "sources": [
+            "https://example.com"
+          ]
+        },
+        "role": {
+          "title": "Software Engineer",
+          "seniority": "Unspecified",
+          "responsibilities": [
+            "Standard software engineering responsibilities"
+          ],
+          "requirements": []
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "requirement_ids": [
+              "r1"
+            ],
+            "category": "technical",
+            "prompt": "Explain how you would design a robust DNS resolution and routing architecture for a high-traffic documentation domain service that handles millions of requests daily.",
+            "answer_outline": "Discussion of Anycast DNS for global latency reduction, TTL strategies for domain caching, failover mechanisms across multiple cloud providers, and mitigation of DDoS attacks using edge CDNs.",
+            "difficulty": 3
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f1",
+            "front": "What is the primary trade-off between monolithic and microservices architectures?",
+            "back": "• Monoliths offer simpler initial deployment and lower operational overhead, but become harder to scale and maintain as codebases grow.\n• Microservices provide independent deployability and technology diversity, but introduce complex network latency, eventual consistency, and distributed debugging challenges.",
+            "requirement_ids": [
+              "r1"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 5,
+          "days": [
+            {
+              "day": 1,
+              "focus": "Core Technical Concepts & Problem Solving",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 40
+            },
+            {
+              "day": 2,
+              "focus": "Active Recall & Mock Interview",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 3,
+              "focus": "Active Recall & Mock Interview",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 4,
+              "focus": "Active Recall & Mock Interview",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 5,
+              "focus": "Final Mock Rehearsal & Strategy",
+              "question_ids": [
+                "q1"
+              ],
+              "minutes": 30
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    }
+  ]
+}
